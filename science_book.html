@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/team.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="/static/nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>       
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images_icons/favicons/apple-touch-icon.png">
+          <link rel="icon" type="image/png" sizes="32x32" href="/static/images_icons/favicons/favicon-32x32.png">
+          <link rel="icon" type="image/png" sizes="16x16" href="/static/images_icons/favicons/favicon-16x16.png">
+          <link rel="manifest" href="/static/images_icons/favicons/site.webmanifest">
+          <link rel="mask-icon" href="/static/images_icons/favicons/safari-pinned-tab.svg" color="#5bbad5">
+          <link rel="shortcut icon" href="/static/images_icons/favicons/favicon.ico">
+          <meta name="msapplication-TileColor" content="#da532c">
+          <meta name="msapplication-config" content="/static/images_icons/favicons/browserconfig.xml">
+          <meta name="theme-color" content="#0c0909">
+          <meta name ="decription" content="Meet EASY LEARNING team.Our team is full of enthusiastic people who know no bound of learning"/>
+          <link rel="stylesheet" type="text/css" href="/static/all_books.css">                
+    
+    <title>EASY LEARNING  | Science Books </title>
+</head>
+<body style="height:120vw;">
+ <nav> 
+        <input type="checkbox" id="check"> 
+        <label for="check" class="checkbtn"> <i class="fas fa-bars"></i> </label> 
+        <label class="logo"><a href="/" style="color: rgb(6, 243, 6); text-decoration:none;cursor: pointer;">Easy Learning</a></label>
+        <ul> 
+         <li><a href="/">Home</a></li> 
+         <li><a href="/blogs">Blogs</a></li> 
+         <li><a class="active" href="/resources">Resources</a></li> 
+         <li><a href="/team">Team</a></li> 
+         <li><a href="/contact">Contact</a></li> 
+         <li><a href="/about">About us</a></li> 
+         <li>
+            <div>
+                <input type="checkbox" class="checkbox" id="chk" onclick="myFunction()" />
+                <label class="label" for="chk">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+      
+                <i class="fas fa-sun" aria-hidden="true"></i>
+      
+                <div class="ball"></div>
+                </label>
+                </div>
+                  
+   
+         </li>
+   
+        </ul> 
+       </nav>
+<section></section>
+<div class="search_items">
+
+<h2 class="heading">Science Books</h2>
+
+<input type="text" id="myInput" onkeyup="search()" placeholder="Search anything....!" title="Type in a name of a book">
+<img class="search_icon" src="/static/images_icons/search_icon.png" alt="Search logo">
+<ul id="myUL">
+  
+
+  
+
+  
+
+     <li><a href = "Book:;"><img class="big_book_image" src="https://creativestudyacademy.com/wp-content/uploads/2021/01/Physics-Chapter-1-1024x576.png"  alt="image"> <b>Physics Chapter 4(work,power and energy)</b></a><img class="download" id="download_image_9" src="/static/images_icons/download.png" alt="download"></li>
+  
+
+
+
+     <li><a href = "Book:;"><img class="big_book_image" src="https://courstika.com/wp-content/uploads/2021/01/HSC-Physics-1st-Paper-Suggestion.jpg"  alt="image"> <b>PHYSICS 1ST PAPER মহাকষ􀆳 ও অিভকষ</b></a><img class="download" id="download_image_10" src="/static/images_icons/download.png" alt="download"></li>
+            
+
+    
+
+
+     <li><a href = "Book:;"><img class="book_image" src="https://thumbs.dreamstime.com/b/physics-cover-school-notebook-textbook-hand-drawn-objects-checkered-background-blank-educational-scientific-poster-210821251.jpg"  alt="image"> <b>Dynamics Physics</b></a><img class="download" id="download_image_14" src="/static/images_icons/download.png" alt="download"></li>
+
+
+    
+
+
+       <li><a href = "Book:;"><img class="book_image" src="https://i.pinimg.com/originals/93/83/e8/9383e84aa63cf213d5817ee8e2a037f1.jpg" alt="image"> <b>Organic Chemistry Notes</b></a><img class="download" id="download_image_25" src="/static/images_icons/download.png" alt="download"></li>
+
+
+
+         <li><a href = "Book:;"><img class="big_book_image" src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/2952/2018/01/31201749/CNX_UPhysics_17_06_beats.jpg" alt="image" > <b>Physics Beat And Inensity</b></a><img class="download" id="download_image_27" src="/static/images_icons/download.png" alt="download"></li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+</div>
+
+<script>
+
+    $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+      
+          $('nav').addClass('black');
+        }
+        else{
+          $('nav').removeClass('black');
+        }
+      })
+           </script>
+           
+    
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              AOS.init();
+            </script>
+    <script>
+        function search() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+    </script>
+
+<script>
+     function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark");
+    }
+
+
+</script>
+<script>
+          
+         document.getElementById("download_image_9").onclick = function () { 
+            location.href = "/physics_chapter_4"; 
+        }; 
+         document.getElementById("download_image_10").onclick = function () { 
+            location.href = "/physics_chapter_5"; 
+        }; 
+       
+        document.getElementById("download_image_14").onclick = function () { 
+            location.href = "/dynamics"; 
+        };    
+       
+
+       
+        document.getElementById("download_image_25").onclick = function () { 
+            location.href = "/organic_chemistry_notes"; 
+        }; 
+         
+         document.getElementById("download_image_27").onclick = function () { 
+            location.href = "/physics_beat_intensity"; 
+        }; 
+         
+
+
+  
+
+
+</script>
+<script>
+    const menu_button = 
+</script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+

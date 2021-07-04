@@ -1,0 +1,14 @@
+{
+    "name": "Easy Learning",
+    "short_name": "Easy Learning",
+    "icons": [
+        {
+            "src": "/static/images_icons/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#0c0909",
+    "background_color": "#0c0909",
+    "display": "standalone"
+}
