@@ -625,7 +625,7 @@ body.dark .fb_page {
 }
 
 .page_btn::after {
-  content: 'Our Page';
+  content: 'Our Group';
   font-size: 18px;
   align-items: center;
   display: flex;

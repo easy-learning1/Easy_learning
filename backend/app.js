@@ -61,10 +61,10 @@ app.get("/contact",(req,res)=>{
 
 });*/
 
-
 app.get("/about",(req,res)=>{
-  res.status(200).render('about')
-});
+  res.status(200).sendFile(path.join(__dirname, '../blogs.html'));
+})
+
 
 //all books
 app.get("/resources/all_books",(req,res)=>{
