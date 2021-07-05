@@ -89,6 +89,23 @@ app.get("/resources/business_book",(req,res)=>{
 app.get("/resources/selfmotivation_books",(req,res)=>{
   res.status(200).sendFile(path.join(__dirname, '../blogs.html'));
 })
+  
+//all_courses 
+
+app.get("/resources/all_courses",(req,res)=>{
+  res.status(200).sendFile(path.join(__dirname, '../All_courses.html'));
+})
+
+// python coures
+app.get("/resources/python_courses",(req,res)=>{
+  res.status(200).sendFile(path.join(__dirname, '../blogs.html'));
+})
+
+//we courses
+app.get("/resources/web_courses",(req,res)=>{
+  res.status(200).sendFile(path.join(__dirname, '../blogs.html'));
+})
+
 
 //server
 app.listen(port,()=>{
