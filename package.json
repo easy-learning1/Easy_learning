@@ -4,9 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon app.js",
-    "start" : "cd backend && app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "author": "sunnymoon",
   "license": "ISC",
