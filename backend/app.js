@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const fs= require('fs');
+const compression = require('compression');
 
 const port = process.env.PORT || 8000;
 
@@ -23,6 +24,7 @@ app.set('views',path.join(__dirname,'views'))
 
 
 //end po int of pug
+app.use(compression());
 
   app.get('/',(req, res)=> {
     res.status(200).sendFile(path.join(__dirname, '../easy.html'));

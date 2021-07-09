@@ -4,12 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start" :"cd backend && node app.js",
+    "start": "cd backend && node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sunnymoon",
   "license": "ISC",
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.17.1",
     "pug": "^3.0.2"
   }
