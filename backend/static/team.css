@@ -203,6 +203,12 @@ background-color: rgb(27, 17, 17);
 left: 0;
     }
   }
+  @media(max-width: 823px){
+    nav ul{
+      height: 52%;
+      width: 45%;
+    }
+  }
   section{
     background: url(bg1.jpg) no-repeat;
     background-size: cover;
@@ -754,7 +760,12 @@ box-shadow: 5px 5px 15px 5px #14FF37;
     left: 0.4em;
   }
 }
-
+@media(max-width: 823px){
+  #myInput{
+    position: relative;
+top: -10em;
+  }
+}
 .search_icon{
 position: absolute;
 top: 8em;
@@ -772,7 +783,11 @@ left: 1.5em;
   }
 }
 
-
+@media(max-width: 823px){
+  .search_icon{
+    top: 12.3em;
+}
+}
 @-webkit-keyframes search_icon{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes search_icon{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 #myUL {
   list-style-type: none;
