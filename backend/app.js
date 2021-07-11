@@ -7,7 +7,7 @@ const compression = require('compression');
 const port = process.env.PORT || 8000;
 
 //static files
-app.use('/static',express.static("static"));
+app.use('/static',express.static("static", { maxAge: 31557600 }));
 //encoding
 app.use(express.urlencoded())
 
@@ -27,6 +27,7 @@ app.set('views',path.join(__dirname,'views'))
 app.use(compression());
 
   app.get('/',(req, res)=> {
+    res.setHeader('Cache-Control', 'static, max-age=86400');
     res.status(200).sendFile(path.join(__dirname, '../easy.html'));
   });
 
