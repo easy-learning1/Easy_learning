@@ -12,18 +12,9 @@ app.use('/static',express.static("static"));
 app.use(express.urlencoded())
 
 
-//pug templtae engine
 
 
-app.set('view engine','pug')
-
-
-//views directory
-app.set('views',path.join(__dirname,'views'))
-
-
-
-//end po int of pug
+//end to end point of pages
 app.use(compression());
 
   app.get('/',(req, res)=> {
@@ -48,7 +39,7 @@ app.get('/blogs',(req, res)=> {
 
 
 app.get("/contact",(req,res)=>{
-  res.status(200).render('contact')
+  res.status(200).sendFile(path.join(__dirname, '../blogs.html'));
 });
 
 /*app.post("/contact",(req,res)=>{

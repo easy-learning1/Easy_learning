@@ -14,6 +14,11 @@ nav{
 .search_items{
   margin-top: -24em;
 }
+@media(min-height: 728px){
+  .search_items{
+    margin-top: -2em;
+}
+  }
 .book_image{
   height: 183px;
 }
