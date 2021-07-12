@@ -39,7 +39,7 @@ app.get('/blogs',(req, res)=> {
 
 
 app.get("/contact",(req,res)=>{
-  res.status(200).sendFile(path.join(__dirname, '../blogs.html'));
+  res.status(200).sendFile(path.join(__dirname, '../contact.html'));
 });
 
 /*app.post("/contact",(req,res)=>{
