@@ -373,4 +373,15 @@ left: 6em;
     top: 30em;
     left: 7.5em;
   }
+}@media(max-width: 365px){
+  .btn-11{
+    top: 25em;
+left: 6.5em;
+  }
+}
+@media(max-width: 330px){
+  .btn-11{
+    top: 23em;
+left: 5em;
+  }
 }
