@@ -178,12 +178,20 @@ nav a:hover {
         width: 10em;
     }
 }
+@media(max-width: 365px),(max-height: 645px){
+    nav ul{
+        width: 10em;
+        height: 26em;
+    }
+}
 @media(max-width: 330px){
     nav ul{
         width: 10.5em;
         height: 65%;
     }
 }
+
+    
 
 section {
     background-size: cover;
