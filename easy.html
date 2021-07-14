@@ -31,10 +31,12 @@
       
 
 
-<script src="/static/typed.js"></script>
+<script defer async src="/static/typed.js"></script>
 <script defer data-domain="easy-learning1.herokuapp.com" src="https://plausible.io/js/plausible.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/static/modified.css">
+
+<link rel="preload" href="/static/easy.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/static/easy.css"></noscript>
    
 <title>EASY LEARNING  |  HOME</title>
 </head> 
@@ -312,17 +314,17 @@ Easy learning is a community for learners and enthusiastic people who doesn't bo
 
 
   
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script  src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script defer async src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script defer async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     
  
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="/static/nav.js"></script>
+<script   src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script  src="/static/nav.js"></script>
 <script>
     
    var typed=new Typed(".type",{strings:["LEAENING","Is Easy","And We ","Make It..","EASIER!"],typeSpeed:60,backSpeed:60,loop:!0});document.getElementById("business").onclick=function(){location.href="/blogs"},document.getElementById("math").onclick=function(){location.href="/blogs"},document.getElementById("physics").onclick=function(){location.href="/blogs"},document.getElementById("biology").onclick=function(){location.href="/blogs"},document.getElementById("astronomy").onclick=function(){location.href="/blogs"},document.getElementById("ethics").onclick=function(){location.href="/blogs"};const chk=document.getElementById("chk");chk.addEventListener("change",()=>{document.body.classList.toggle("dark")});var tooltipTriggerList=[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')),tooltipList=tooltipTriggerList.map(function(t){return new bootstrap.Tooltip(t)});
