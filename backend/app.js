@@ -16,7 +16,7 @@ app.use(express.urlencoded())
 
 //end to end point of pages
 app.use(compression());
-
+res.set('Cache-Control', 'public, max-age=31557600'); 
   app.get('/',(req, res)=> {
     res.status(200).sendFile(path.join(__dirname, '../easy.html'));
   });
