@@ -17,20 +17,24 @@ app.use(express.urlencoded())
 //end to end point of pages
 app.use(compression());
   app.get('/',(req, res)=> {
+    res.set('Cache-Control', 'public, max-age=31557600'); 
     res.status(200).sendFile(path.join(__dirname, '../easy.html'));
   });
 
 
   app.get('/resources',(req, res)=> {
+     res.set('Cache-Control', 'public, max-age=31557600'); 
     res.status(200).sendFile(path.join(__dirname, '../resources.html'));
   });
 
 
 app.get('/team',(req, res)=> {
+   res.set('Cache-Control', 'public, max-age=31557600'); 
   res.status(200).sendFile(path.join(__dirname, '../team.html'));
 });
 
 app.get('/blogs',(req, res)=> {
+   res.set('Cache-Control', 'public, max-age=31557600'); 
   res.status(200).sendFile(path.join(__dirname, '../blogs.html'));
 });
 
@@ -38,6 +42,7 @@ app.get('/blogs',(req, res)=> {
 
 
 app.get("/contact",(req,res)=>{
+   res.set('Cache-Control', 'public, max-age=31557600'); 
   res.status(200).sendFile(path.join(__dirname, '../contact.html'));
 });
 
@@ -54,12 +59,14 @@ app.get("/contact",(req,res)=>{
 });*/
 
 app.get("/about",(req,res)=>{
+   res.set('Cache-Control', 'public, max-age=31557600'); 
   res.status(200).sendFile(path.join(__dirname, '../blogs.html'));
 })
 
 
 //all books
 app.get("/resources/all_books",(req,res)=>{
+   res.set('Cache-Control', 'public, max-age=31557600'); 
   res.status(200).sendFile(path.join(__dirname, '../All_books.html'));
 })
 
