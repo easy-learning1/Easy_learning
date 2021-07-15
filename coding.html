@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/team.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+     <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#1be41b">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#1be41b">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#1be41b">
+
+   
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="/static/nav.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>       
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet"> 
@@ -23,7 +30,7 @@
           <meta name="msapplication-config" content="/static/images_icons/favicons/browserconfig.xml">
           <meta name="theme-color" content="#0c0909">
           <meta name ="decription" content="Meet EASY LEARNING team.Our team is full of enthusiastic people who know no bound of learning"/>
-          <link rel="stylesheet" type="text/css" href="/static/all_books.css">                
+          <link rel="stylesheet" type="text/css" href="/static/all_books.css"> <link rel="stylesheet" href="/static/team.css">                 
     
     <title>EASY LEARNING  | Programming\Coding Books </title>
 </head>
@@ -57,12 +64,11 @@
         </ul> 
        </nav>
 <section></section>
-<div class="search_items">
 
 <h2 class="heading">Programming\Coding Books</h2>
 
 <input type="text" id="myInput" onkeyup="search()" placeholder="Search anything....!" title="Type in a name of a book">
-<img class="search_icon" src="/static/images_icons/search_icon.png" alt="Search logo">
+
 <ul id="myUL">
   <li><a href = "Book:;"><img class="book_image" src="https://opensource.com/sites/default/files/styles/medium/public/pictures/an_introduction_to_programming_with_bash.jpg?itok=Gw00HSCu" alt="image"> <b>An Introduction To Programming With Bash</b></a><img class="download" id="download_image_1" src="/static/images_icons/download.png" alt="download"></li>
    
@@ -145,20 +151,7 @@
 </ul>
 
 
-</div>
 
-<script>
-
-    $(window).on('scroll',function(){
-        if($(window).scrollTop()){
-      
-          $('nav').addClass('black');
-        }
-        else{
-          $('nav').removeClass('black');
-        }
-      })
-           </script>
            
     
           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -166,119 +159,13 @@
               AOS.init();
             </script>
     <script>
-        function search() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
+       
+function search(){var n,e,o,t;for(n=document.getElementById("myInput").value.toUpperCase(),e=document.getElementById("myUL").getElementsByTagName("li"),t=0;t<e.length;t++)((o=e[t].getElementsByTagName("a")[0]).textContent||o.innerText).toUpperCase().indexOf(n)>-1?e[t].style.display="":e[t].style.display="none"}function myFunction(){document.body.classList.toggle("dark")}document.getElementById("download_image_1").onclick=function(){location.href="/an_introduction_to_programming_with_bash"},document.getElementById("download_image_3").onclick=function(){location.href="/apache_sqoop_cookbook"},document.getElementById("download_image_5").onclick=function(){location.href="/begining_with_node.js"},document.getElementById("download_image_6").onclick=function(){location.href="/c_programming_hsc_cracker"},document.getElementById("download_image_7").onclick=function(){location.href="/c_programming_hsc_cracker_2"},document.getElementById("download_image_8").onclick=function(){location.href="/c_programming_loops"},document.getElementById("download_image_11").onclick=function(){location.href="/computer_programming_subin"},document.getElementById("download_image_12").onclick=function(){location.href="/css_beginner_guide"},document.getElementById("download_image_13").onclick=function(){location.href="/rest_api_nodejs"},document.getElementById("download_image_16").onclick=function(){location.href="/hacking_security"},document.getElementById("download_image_17").onclick=function(){location.href="/html_beginner"},document.getElementById("download_image_18").onclick=function(){location.href="/hunt_python"},document.getElementById("download_image_19").onclick=function(){location.href="/javascript_beginner_guide"},document.getElementById("download_image_20").onclick=function(){location.href="/ml_cheatsheet"},document.getElementById("download_image_21").onclick=function(){location.href="/mastering_python"},document.getElementById("download_image_22").onclick=function(){location.href="/ml_cheatsheet_two"},document.getElementById("download_image_23").onclick=function(){location.href="/mysql_beginner_guide"},document.getElementById("download_image_26").onclick=function(){location.href="/php_cookbook"},document.getElementById("download_image_30").onclick=function(){location.href="/web_roadmap"};
+
     </script>
 
-<script>
-     function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark");
-    }
 
-
-</script>
-<script>
-          document.getElementById("download_image_1").onclick = function () { 
-            location.href = "/an_introduction_to_programming_with_bash"; 
-        }; 
-         
-        document.getElementById("download_image_3").onclick = function () { 
-            location.href = "/apache_sqoop_cookbook"; 
-        };
-       
-        document.getElementById("download_image_5").onclick = function () { 
-            location.href = "/begining_with_node.js"; 
-        };
-           document.getElementById("download_image_6").onclick = function () { 
-            location.href = "/c_programming_hsc_cracker"; 
-        }; 
-        document.getElementById("download_image_7").onclick = function () { 
-            location.href = "/c_programming_hsc_cracker_2"; 
-        };  
-         document.getElementById("download_image_8").onclick = function () { 
-            location.href = "/c_programming_loops"; 
-        };  
-         
-         
-        document.getElementById("download_image_11").onclick = function () { 
-            location.href = "/computer_programming_subin"; 
-        };    
-         document.getElementById("download_image_12").onclick = function () { 
-            location.href = "/css_beginner_guide"; 
-        };    
-        document.getElementById("download_image_13").onclick = function () { 
-            location.href = "/rest_api_nodejs"; 
-        };  
-        
-           
-        
-        document.getElementById("download_image_16").onclick = function () { 
-            location.href = "/hacking_security"; 
-        }; 
-        document.getElementById("download_image_17").onclick = function () { 
-            location.href = "/html_beginner"; 
-        }; 
-        document.getElementById("download_image_18").onclick = function () { 
-            location.href = "/hunt_python"; 
-        }; 
-         document.getElementById("download_image_19").onclick = function () { 
-            location.href = "/javascript_beginner_guide"; 
-        }; 
-
-        document.getElementById("download_image_20").onclick = function () { 
-            location.href = "/ml_cheatsheet"; 
-        }; 
-        
-        document.getElementById("download_image_21").onclick = function () { 
-            location.href = "/mastering_python"; 
-        }; 
-        
-        document.getElementById("download_image_22").onclick = function () { 
-            location.href = "/ml_cheatsheet_two"; 
-        }; 
-  
-
-
-        document.getElementById("download_image_23").onclick = function () { 
-            location.href = "/mysql_beginner_guide"; 
-        }; 
-       
-         document.getElementById("download_image_26").onclick = function () { 
-            location.href = "/php_cookbook"; 
-        };
-         
-         
-
-       
-        document.getElementById("download_image_30").onclick = function () { 
-            location.href = "/web_roadmap"; 
-        };  
-
-
-
-
-  
-
-
-</script>
-<script>
-    const menu_button = 
-</script>
+<script src="/static/nav.js"></script>
     
 </body>
 </html>

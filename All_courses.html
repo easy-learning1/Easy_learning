@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="/static/team.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/static/team.css"></noscript> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#1be41b">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#1be41b">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#1be41b">
+
+   
+  
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="/static/nav.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>       
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet"> 
@@ -25,56 +32,14 @@
           <meta name="theme-color" content="#0c0909">
           <meta name ="decription" content="Meet EASY LEARNING team.Our team is full of enthusiastic people who know no bound of learning"/>
           <link rel="preload" href="/static/all_books.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/static/all_books.css"></noscript>                
+<noscript><link rel="stylesheet" href="/static/all_books.css"></noscript>  
+  <link rel="preload" href="/static/team.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/static/team.css"></noscript>               
     
-    <title>EASY LEARNING  | ALL Courses </title>
+    <title>EASY LEARNING  | All Courses </title>
 
     <style>
-        .html_book_image{
-            height: 183px;
-             width:15em;
-        }
-        .graphics_design_image{
-            height: 183px;
-             width:15em;
-        }
-        .web_design_image{
-            height: 183px;
-             width:15em;
-        }
-        .android_app_image{
-            height: 183px;
-             width:15em;
-        }
-        .android_game_image{
-            height: 183px;
-             width:15em;
-        }
-        @media(max-width: 740px){
-            .html_book_image{
-                width: 7em;
-                height: 114px;
-            }
-
-            .graphics_design_image{
-                width: 7em;
-                height: 114px;
-            }
-
-            .web_design_image{
-                width: 7em;
-                height: 114px;
-            }
-             .android_app_image{
-                width: 5em;
-                height: 114px;
-            }
-
-            .android_game_image{
-                width: 5em;
-                height: 114px;
-            }
-        }
+        .html_book_image{height:183px;width:15em}.graphics_design_image{height:183px;width:15em}.web_design_image{height:183px;width:15em}.android_app_image{height:183px;width:15em}.android_game_image{height:183px;width:15em}@media(max-width:740px){.html_book_image{width:7em;height:114px}.graphics_design_image{width:7em;height:114px}.web_design_image{width:7em;height:114px}.android_app_image{width:5em;height:114px}.android_game_image{width:5em;height:114px}}
 
     </style>
 </head>
@@ -109,12 +74,11 @@
         </ul> 
        </nav>
 <section></section>
-<div class="search_items">
 
 <h2 class="heading">All Courses</h2>
 
 <input type="text" id="myInput" onkeyup="search()" placeholder="Search anything....!" title="Type in a name of a book">
-<img class="search_icon" src="/static/images_icons/search_icon.png" alt="Search logo">
+
 <ul id="myUL">
 
   <li><a href = "Book:;"><img class="html_book_image" src="https://frontendmasters.com/books/front-end-handbook/2017/images/web-tech-employed.jpg" alt="image"> <b>Web Designing Front End Developing</b></a><img id="download_image_1" class="download" src="https://i.pinimg.com/originals/eb/6a/c0/eb6ac003b14415bf9b4b8d1f16241c77.png" alt="download"></li>
@@ -171,20 +135,8 @@
 </ul>
 
 
-</div>
 
-<script>
 
-    $(window).on('scroll',function(){
-        if($(window).scrollTop()){
-      
-          $('nav').addClass('black');
-        }
-        else{
-          $('nav').removeClass('black');
-        }
-      })
-           </script>
            
     
           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -192,112 +144,14 @@
               AOS.init();
             </script>
     <script>
-        function search() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
+function search(){var e,o,n,d;for(e=document.getElementById("myInput").value.toUpperCase(),o=document.getElementById("myUL").getElementsByTagName("li"),d=0;d<o.length;d++)((n=o[d].getElementsByTagName("a")[0]).textContent||n.innerText).toUpperCase().indexOf(e)>-1?o[d].style.display="":o[d].style.display="none"}function myFunction(){document.body.classList.toggle("dark")}document.getElementById("download_image_1").onclick=function(){window.open("https://drive.google.com/drive/folders/1e3FI3LS0t3DrnqTS87WrV7SiiGgcFJ1f?usp=sharing","blank")},document.getElementById("download_image_2").onclick=function(){window.open("https://drive.google.com/drive/folders/13BeLWmBSMKvNChbuzR4FwtUhchTL_C_6?usp=sharing","blank")},document.getElementById("download_image_3").onclick=function(){window.open("https://drive.google.com/drive/folders/1MgZoQAp7g0tbYEuxxu9xhbf01BlsLWph?usp=sharing","blank")},document.getElementById("download_image_4").onclick=function(){window.open("https://drive.google.com/drive/folders/1n0Z-zv_3ZLNci4azvmB_bKPXc8rjv7Qc?usp=sharing","blank")},document.getElementById("download_image_5").onclick=function(){window.open("https://drive.google.com/drive/folders/1KPN6oAaVBkiZXQ34VoJY4OE4Bsoud93B?usp=sharing","blank")},document.getElementById("download_image_6").onclick=function(){window.open("https://drive.google.com/drive/folders/1TvD_eD9wrlxSX5RkPsGi2wVVuEZpTNUq?usp=sharing","blank")},document.getElementById("download_image_7").onclick=function(){window.open("https://drive.google.com/drive/folders/1IhJYsgbw9j_Rwh5AmEzCmAivArYHPKXS?usp=sharing","blank")},document.getElementById("download_image_8").onclick=function(){window.open("https://drive.google.com/drive/folders/1ouEMMalvAadAANlJIKKJep2AAG0Cy776?usp=sharing","blank")},document.getElementById("download_image_9").onclick=function(){window.open("https://drive.google.com/drive/folders/1ks1O_g3Z5mbS6riHUTpIXhe0O---tFuc?usp=sharing","blank")},document.getElementById("download_image_10").onclick=function(){window.open("https://drive.google.com/drive/folders/13wJSQ2GC-MZwcAmNYhCRFSrOsPRdsZnu?usp=sharing","blank")},document.getElementById("download_image_11").onclick=function(){window.open("https://drive.google.com/drive/folders/1nNo3NiF6gfoCllRJlUH4JxW0vH6oYnLk?usp=sharing","blank")},document.getElementById("download_image_12").onclick=function(){window.open("https://drive.google.com/drive/folders/1b9kQx-1vfTTAVuxOKMnoI7MQpJI54amQ?usp=sharing","blank")},document.getElementById("download_image_13").onclick=function(){window.open("https://drive.google.com/drive/folders/1nfukZftKAqeZRUWvDx4OwORmXC-5pN_N?usp=sharing","blank")},document.getElementById("download_image_14").onclick=function(){window.open("https://drive.google.com/drive/folders/1---lzPMgcjUm-LCisvMjSdWQ4UfDkTZ4?usp=sharing","blank")},document.getElementById("download_image_15").onclick=function(){window.open("https://drive.google.com/drive/folders/1ijGVe8d_eQflcP4AX5nwWGaGoMtjMIY7?usp=sharing","blank")};
     </script>
 
-<script>
-     function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark");
-    }
 
 
-</script>
-<script>
-         
-     document.getElementById("download_image_1").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1e3FI3LS0t3DrnqTS87WrV7SiiGgcFJ1f?usp=sharing","blank"); 
-        };
-       
-        document.getElementById("download_image_2").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/13BeLWmBSMKvNChbuzR4FwtUhchTL_C_6?usp=sharing","blank"); 
-        };
-
-         document.getElementById("download_image_3").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1MgZoQAp7g0tbYEuxxu9xhbf01BlsLWph?usp=sharing","blank"); 
-        };
-
-         document.getElementById("download_image_4").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1n0Z-zv_3ZLNci4azvmB_bKPXc8rjv7Qc?usp=sharing","blank"); 
-        };
+<script src="/static/nav.js"></script>
 
 
-         document.getElementById("download_image_5").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1KPN6oAaVBkiZXQ34VoJY4OE4Bsoud93B?usp=sharing","blank"); 
-        };
-
-         document.getElementById("download_image_6").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1TvD_eD9wrlxSX5RkPsGi2wVVuEZpTNUq?usp=sharing","blank"); 
-        };
-
-        document.getElementById("download_image_7").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1IhJYsgbw9j_Rwh5AmEzCmAivArYHPKXS?usp=sharing","blank"); 
-        };
-         
-        document.getElementById("download_image_8").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1ouEMMalvAadAANlJIKKJep2AAG0Cy776?usp=sharing","blank"); 
-        };
-
-         document.getElementById("download_image_9").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1ks1O_g3Z5mbS6riHUTpIXhe0O---tFuc?usp=sharing","blank"); 
-        };
-        
-         document.getElementById("download_image_10").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/13wJSQ2GC-MZwcAmNYhCRFSrOsPRdsZnu?usp=sharing","blank"); 
-        };
-
-
-        document.getElementById("download_image_11").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1nNo3NiF6gfoCllRJlUH4JxW0vH6oYnLk?usp=sharing","blank"); 
-        };
-
-        document.getElementById("download_image_12").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1b9kQx-1vfTTAVuxOKMnoI7MQpJI54amQ?usp=sharing","blank"); 
-        };
-            
-          document.getElementById("download_image_13").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1nfukZftKAqeZRUWvDx4OwORmXC-5pN_N?usp=sharing","blank"); 
-        };
-        
-         document.getElementById("download_image_14").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1---lzPMgcjUm-LCisvMjSdWQ4UfDkTZ4?usp=sharing","blank"); 
-        };
-
-
-document.getElementById("download_image_15").onclick = function () { 
-            window.open("https://drive.google.com/drive/folders/1ijGVe8d_eQflcP4AX5nwWGaGoMtjMIY7?usp=sharing","blank"); 
-        };
-
-
-
-
-
-
-
-
-
-
-
-
- 
-</script>
-
-    
 </body>
 </html>
 
