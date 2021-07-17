@@ -1,1 +1,167 @@
-body{background-color:#e9ebee;position: relative;overflow-x: hidden}nav{background-color:#113442}@media(max-width:740px){nav{z-index:10}}.search_items{margin-top:-24em}@media(max-width:365px){.search_items{margin-top:-2em}}@media(min-height:728px){.search_items{margin-top:unset;}}.book_image{height:183px}body.dark .book_image{height:185px}@media(max-width:740px){.book_image{height:114px}body.dark .book_image{height:117px}}.download{height:46px;position:relative;top:-8em;left:36em;cursor:pointer}.big_book_image{width:11em;height:185px}@media(max-width:740px){.big_book_image{width:6em;height:117px}body.dark .big_book_image{width:6em;height:117px}}@media(max-width:740px){.download{left:18em;top:-4em}}@media(max-width:330px){.download{left:16em}}body.dark .download{filter:contrast(1%) brightness(500%) sepia(10%)}body.dark #myul li a{box-shadow:none;background-color:#000;color:purple}
+body {
+    background-color: #e9ebee;
+    position:  relative;
+    overflow-x:  hidden;
+}
+nav {
+    background-color: #113442;
+}
+@media(max-width:740px) {
+    nav {
+    z-index: 10;
+}
+}.search_items {
+    margin-top: -24em;
+}
+@media(max-width:365px) {
+    .search_items {
+    margin-top: -2em;
+}
+}@media(min-height:728px) {
+    .search_items {
+    margin-top: unset;
+}
+}
+.book_image {
+    height: 183px;
+}
+body.dark .book_image {
+    height: 185px;
+}
+@media(max-width:740px) {
+    .book_image {
+    height: 114px;
+}
+body.dark .book_image {
+    height: 117px;
+}
+}.download {
+    height: 46px;
+    position: relative;
+    top: -8em;
+    left: 36em;
+    cursor: pointer;
+}
+.big_book_image {
+    width: 11em;
+    height: 185px;
+}
+@media(max-width:740px) {
+    .big_book_image {
+    width: 6em;
+    height: 117px;
+}
+body.dark .big_book_image {
+    width: 6em;
+    height: 117px;
+}
+}@media(max-width:740px) {
+    .download {
+    left: 18em;
+    top: -4em;
+}
+}@media(max-width:330px) {
+    .download {
+    left: 16em;
+}
+}body.dark .download {
+    filter: contrast(1%) brightness(500%) sepia(10%);
+}
+body.dark #myul li a {
+    box-shadow: none;
+    background-color: #000;
+    color: purple;
+}
+.info {
+    margin-top:  -2em;
+    margin-left:  13em;
+    color:  green;
+}
+.new {
+    position:  relative;
+    top:  -8em;
+    left:  30em;
+    color:  green;
+    border:  2px solid #36ec36;
+    padding:  7px;
+    border-radius:  10px;
+    font-size:  19px;
+    font-weight:  700;
+    width: 3em;
+
+    -webkit-animation: new 2s infinite both;
+            animation: new 2s infinite both;
+
+}
+
+@-webkit-keyframes new {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+            transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+            transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+            transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+            transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+            transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+@keyframes new {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+            transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+            transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+            transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+            transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+            transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+@media(max-width: 823px){
+    .info{
+        margin-left: 6em;
+        font-size: 16px;
+    }
+    .new{
+        top: -4em;
+        left: 15em;
+        font-size: 18px;
+        width: 3em;
+        padding: 3px;
+    }
+}
