@@ -10,3 +10,4 @@ This app is hosted with **heroku github connect**.The main app.js file is on **b
  - 2.Backend : NODEJS, EXPRESS.JS
  - 3.Databse : Not available yet
  
+N.B: The javascript and css files are minified for optimization! Unminified it to use it more comfortably
